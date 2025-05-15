@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Controllers\NewFile.txt" />
+    <None Remove="Views\NewFile.txt" />
+  </ItemGroup>
+
 </Project>
