@@ -32,4 +32,11 @@ public class EmployeesController : Controller
         service.Add(employee);
         return RedirectToAction(nameof(Index));
     }
+
+    [HttpGet("Details/{id}")]
+    public IActionResult Details(int id)
+    {
+        var model = service.GetById(id);
+        return View(model);
+    }
 }

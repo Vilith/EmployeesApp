@@ -6,10 +6,9 @@ namespace EmployeesApp.Web.Models
     {
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Enter a name")]
+        [Required/*(ErrorMessage = "Enter a name")*/]
         public string Name { get; set; } = string.Empty;
-        [EmailAddress(ErrorMessage = "Enter an e-mail")]
+        [EmailAddress]
         public string Email { get; set; } = string.Empty;
-
     }
 }

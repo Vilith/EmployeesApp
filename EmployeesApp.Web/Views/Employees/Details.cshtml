@@ -1,0 +1,15 @@
+﻿@using EmployeesApp.Web.Models
+@model Employee
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Details</title>
+    <link rel="stylesheet" href="https://unpkg.com/@@picocss/pico@@latest/css/pico.classless.min.css">
+</head>
+<body>
+    <p>@Model.Name</p>
+    <p>@Model.Email</p>
+</body>
+</html>
