@@ -6,8 +6,9 @@ namespace EmployeesApp;
 
 public class EmployeesController : Controller
 {
-    private static readonly EmployeeService service = new();
+    static EmployeeService service = new();
 
+    [HttpGet("")]
     public IActionResult Index()
     {
         var model = service.GetAll();
