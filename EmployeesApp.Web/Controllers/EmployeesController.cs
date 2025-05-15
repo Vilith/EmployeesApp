@@ -6,7 +6,7 @@ namespace EmployeesApp;
 
 public class EmployeesController : Controller
 {
-    static EmployeeService service = new();
+    private readonly static EmployeeService service = new();
 
     [HttpGet("")]
     public IActionResult Index()
@@ -18,7 +18,7 @@ public class EmployeesController : Controller
     [HttpGet("Create")]
     public IActionResult Create()
     {
-        return View("Index");
+        return View();
     }
 
     [HttpPost("Create")]
